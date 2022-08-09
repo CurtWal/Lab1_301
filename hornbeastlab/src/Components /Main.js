@@ -7,16 +7,13 @@ export default class Main extends Component {
     render() {
         return (
             <div>
-                <h2>Mountain Goat</h2>
+                <h2>{this.props.name}</h2>
                 <img src={Goat} alt='Goat' title='Goat'></img>
-                <p>The Mountain Goat, One of the best climbers in the world.
-                    <br></br>Do not Stand infront of them on a mountain or you just might
-                    go flying off.</p>
+                <p>{this.props.paragraph}</p>
 
-                <h2>Rhino</h2>
+                <h2>{this.props.name2}</h2>
                 <img src={Rhino} alt='Rhino' title='Rhino'></img>
-                <p>The Rhino or also known as The Rhinoceros, are speed machines!
-                    <br></br>Capable of running upwards of 30-40 miles per hour.</p>
+                <p>{this.props.paragraph2}</p>
 
                 {HornBeast.hornBeast.map((item, i) => (
                     <div>
